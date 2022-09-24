@@ -17,30 +17,28 @@
     <header>
         <nav>
             <!--en el logo volves a inicio, en las etiquetas los enlaces a otras paginas-->
-            <table id="encabezado">
-                <tr>
-                    <th>
+            <section id="encabezado">
+                    <div class="box">
                         <a href="./index.html">
                             <img src="http://drive.google.com/uc?export=view&id=1JT0YLjmlFnsDHVQtJKRh4liNzjxZD8y7" alt="logoInicio" class="logoInicio">
                         </a>
-                    </th>
-                    <th>
-                        <a href="./juegos.html" class="encabezado">JUEGOS</a>
-                    </th>
-                    <th>
-                        <a href="./plataformas.html" class="encabezado">PLATAFORMAS</a>
-                    </th>
-                    <th>
-                        <a href="./tiendas.html" class="encabezado">TIENDAS</a>
-                    </th>
-                    <th>
-                        <a href="#" class="encabezado">NOTICIAS</a>
-                    </th>
-                    <th>
-                        <a href="./soporte.html" class="encabezado">SOPORTE</a>
-                    </th>
-                </tr>                        
-            </table>
+                    </div>
+                    <div class="box">
+                        <a href="./juegos.html" class="encabezado"><p>JUEGOS</p></a>
+                    </div>
+                    <div class="box">
+                        <a href="./plataformas.html" class="encabezado"><p>PLATAFORMAS</p></a>
+                    </div>
+                    <div class="box">
+                        <a href="./tiendas.html" class="encabezado"><p>TIENDAS</p></a>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="encabezado"><p>NOTICIAS</p></a>
+                    </div>
+                    <div class="box">
+                        <a href="./soporte.html" class="encabezado"><p>SOPORTE</p></a>
+                    </div>                     
+                </section>
         </nav>
     </header>
     <main>
@@ -55,145 +53,124 @@
             </div>  
         </section>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <table>
-            <td>
-                <table>
-                    <th>
-                        <!--titulo de Ultimas Noticias + redes sociales-->
-                        <h1 class="tituloNoticias">Ultimas Noticias</h1>
-                    </th>
-                    <th>
-                        <table class="miniRedes">
-                        <th>
-                            <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono2">
-                        </th>
-                        <th>
-                            <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono2">
-                        </th>
-                        <th>
-                            <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono2">
-                        </th>
-                        <th>
-                            <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono2">
-                        </th>
-                        </table>
-                    </th>
-                </table>
-            </td>
-            <td>
-                <table class="tablaNoticias">
-                    <td>
-                        <img src="https://picsum.photos/200?random=20" alt="Imagen random 3" class="noticiasDestacadas1">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur minima, voluptatem consequatur assumenda nostrum suscipit repellat quis provident earum quibusdam laboriosam eos, sequi in nihil explicabo corporis, dolorum delectus unde.
-                        </p>
-                    </td>
-                    <td>
-                        <img src="https://picsum.photos/200?random=39" alt="Imagen random 3" class="noticiasDestacadas1">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore a laboriosam, aliquid qui, sit illo nostrum, enim illum voluptas amet possimus reprehenderit ut dignissimos labore voluptatibus quidem ullam id commodi.
-                        </p>
-                    </td>
-            </table>
-            </td>
-        </table>
+        <section class="tablaNoticias">
+            <div class="ultimasNoticias">
+                <!--titulo de Ultimas Noticias + redes sociales-->
+                <h1 class="tituloNoticias">Ultimas Noticias</h1>
+                <div class="miniRedes">
+                    <div>
+                        <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono2">
+                    </div>
+                    <div>
+                        <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono2">
+                    </div>
+                    <div>
+                        <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono2">
+                    </div>
+                    <div>
+                        <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono2">
+                    </div>
+                </div>
+            </div>
+            <div class="noticiasDestacadas1">
+                <img src="https://picsum.photos/200?random=20" alt="Imagen random 3" class="noticiasDestacadas2">
+                <p class="textoNoticias">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur minima, voluptatem consequatur assumenda nostrum suscipit repellat quis provident earum quibusdam laboriosam eos, sequi in nihil explicabo corporis, dolorum delectus unde.
+                </p>
+            </div>
+            <div class="noticiasDestacadas1">
+                <img src="https://picsum.photos/200?random=39" alt="Imagen random 3" class="noticiasDestacadas2">
+                <p class="textoNoticias">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore a laboriosam, aliquid qui, sit illo nostrum, enim illum voluptas amet possimus reprehenderit ut dignissimos labore voluptatibus quidem ullam id commodi.
+                </p>
+            </div>
+        </section>
         <!--un poco de br no viene mal xd-->
-        <br>
-        <br>
-        <br>
-        <br>
     </main>
     <article>
-        <!--en este caso aca, elegi imagenes random para las noticias-->
-        <table class="busquedas">
-            <tr>
-                <th>
-                    <img src="https://picsum.photos/200?random=1" alt="Imagen random 1" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=2" alt="Imagen random 2" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=3" alt="Imagen random 3" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=4" alt="Imagen random 4" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=5" alt="Imagen random 5" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <img src="https://picsum.photos/200?random=6" alt="Imagen random 6" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=7" alt="Imagen random 7" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=8" alt="Imagen random 8" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=9" alt="Imagen random 9" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-                <th>
-                    <img src="https://picsum.photos/200?random=10" alt="Imagen random 10" class="imgBusqueda">   
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </th>
-            </tr>            
-        </table>
+        <section class="boxTop10Busquedas">
+            <div class="top10Busquedas"><h3>NOTICIAS DESTACADAS</h3></div>
+        <div class="busquedas2">
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=1" alt="Imagen random 1" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=2" alt="Imagen random 2" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=3" alt="Imagen random 3" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=4" alt="Imagen random 4" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=5" alt="Imagen random 5" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+        </div>
+        <div class="busquedas2">
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=6" alt="Imagen random 6" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=7" alt="Imagen random 7" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=8" alt="Imagen random 8" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=9" alt="Imagen random 9" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="noticias">
+                <img src="https://picsum.photos/200?random=10" alt="Imagen random 10" class="imgBusqueda">   
+                <p>Lorem ipsum dolor.</p>
+            </div>            
+        </div>
     </article>
+    <br>
+    <br>
     <!--final de la pagina, redes sociales y texto de relleno-->
     <footer id="pieDePagina">
-        <table>
-            <tr class="redesSocialesPie">
-                <th>
-                    <h5>SIGUE NUESTRAS REDES SOCIALES  |
-
-                    </h5>
-                </th>
-                <td>
-                    <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono2">
-                </td>
-                <td>
-                    <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono2">
-                </td>
-                <td>
-                    <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono2">
-                </td>
-                <td>
-                    <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono2">
-                </td>
-            </tr>
-            <tr class="creditos">
-                <th>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
-                        qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
-                        explicabo accusamus quae veritatis?
-                    </p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
-                        qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
-                        explicabo accusamus quae veritatis?
-                    </p>
-                    <br>
-                    <p>Creative Commons 2022</p>
-                </th>
-            </tr>
-        </table>
+        <div>
+            <section class="redesSocialesPie">
+                
+                <div class="boxRedes1">
+                    <div class="boxSigue">SIGUE NUESTRAS REDES SOCIALES  |</div>
+                    <div class="boxRedes2">
+                        <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono1">
+                    </div>
+                    <div class="boxRedes2">
+                        <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono1">
+                    </div>
+                    <div class="boxRedes2">
+                        <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono1">
+                    </div>
+                    <div class="boxRedes2">
+                        <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono1">
+                    </div>
+                </div>
+            </section>
+            <div class="creditos">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
+                    qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
+                    explicabo accusamus quae veritatis?
+                </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
+                    qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
+                    explicabo accusamus quae veritatis?
+                </p>
+                <br>
+                <p>Creative Commons 2022</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
