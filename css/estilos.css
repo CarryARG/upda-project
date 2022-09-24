@@ -3,7 +3,7 @@ no hice que todos se posicionen igual para que tuviera como mas diseño propio c
 
 
 
-
+/*
 /*fuente para todo el body, margen en automatico y un fondo de color blanco no tan blanco xd*/
 body{
     font-family: 'Lato', sans-serif;
@@ -13,11 +13,24 @@ body{
 
 /*encabezado modo god de todas las paginas, jugue un ratito con los id y las clases*/
 #encabezado{
+    display: flex;
     background-color: rgb(1, 38, 68);
-    padding: 0px;
+    margin: 0 auto;
+    flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;
+    height: 10%;
     position:fixed;
-    z-index: 3;   
+    z-index: 3;
+}
+
+.box{
+    width: 200px;
+    height: 64px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .encabezado{
@@ -28,6 +41,7 @@ body{
 
 /*glorioso pie de pagina*/
 #pieDePagina{
+    transform: translate(0px,150px);
     background-color: #272727;
     padding: 75px;
 }
@@ -36,13 +50,35 @@ body{
 .redesSociales1{
     background: rgb(1, 38, 68);
     color: whitesmoke;
-    padding: 0px;
-    top: 60px;
-    position:relative;
-    margin:auto;
+    margin:0 auto;
     width: 90%;
     text-shadow: 2px 2px 10px black;
+    z-index: 10;
+    transform: translate(0px, 64px);
+}
 
+.boxRedes1{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content: center;
+    
+}
+
+.boxSigue{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/*esto es para los iconos de las redes sociales, 1 para los mas grandes, 2 para los que estan en pie de pagina*/
+.icono1{
+    width: 30px;
+    height: 30px;
 }
 
 .videoZelda{
@@ -100,71 +136,74 @@ span{
 .logoInicio{
     width: 60px;
     height: 60px;
-    position:relative;
-    margin: auto;
-}
-
-/*esto es para los iconos de las redes sociales, 1 para los mas grandes, 2 para los que estan en pie de pagina*/
-.icono1{
-    width: 30px;
-    height: 30px;
 }
 
 .icono2{
     width: 22px;
     height: 22px;
-    position:relative;
-    right: 350px;
-    margin: auto;
+}
+
+.boxNoticias{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*titulo de costado para presentar 3 noticias importantes*/
 .noticiasDestacadas{
     transform: rotate(-90deg);
-    position: relative;
+    margin: 50px 0px 0px 0px;
     text-align: center;
-    top: 130px;
-    right: 50px;
     text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 /*el "ver todo" del inicio*/
 .verTodo{
-    position: relative;
-    left: 1000px;
-    bottom:35px;
     text-decoration: none;
     color:rgb(0, 0, 107);
     text-shadow: 0.5px 0.5px 0.5px black;
+    margin: 0px 0px 0px 0px;
     
 }
 
-/*jugue un poco con esto, podria haber trabajado tranquilamente con tablas, pero me gusto mas experimentar*/
-.espaciadoND{
-    position: relative;
-    margin:auto;
-    text-align: center;
-
-}
-
 .noticias3{
-    position: relative;
-    left: 250px;
-    right: 0px;
-    margin: auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    transform: translate(0px,80px);
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
     
 }
 
 /*lo mejor para los subtitulos, jugando un poco mas con posicion relativa*/
 .top10Busquedas{
-    position: relative;
-    left: 550px;
     text-shadow: 0.5px 0.5px 0.5px black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.boxTop10Busquedas{
+    transform: translate(0px,150px);
 }
 
 .busquedas{
-    position: relative;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .imgDestacadas{
@@ -179,13 +218,16 @@ span{
 
 /*posicion del texto con las redes sociales al lado*/
 .redesSocialesPie{
-    bottom: 60px;
-    right: 50px;
-    position:relative;
     color: whitesmoke;
     margin:auto;
     text-shadow: 0.5px 0.5px 0.5px black;
-    padding:0px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    
 }
 
 /*full lorem texto de relleno*/
@@ -216,6 +258,11 @@ span{
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    transform: translate(0px,150px);
+    flex-wrap: wrap;
 }
 
 .letras{
@@ -353,4 +400,4 @@ span{
     right: 30px;
 }
 
-/*aguante la profe Gisele!! B-) */
+/*aguante la profe Gisele!! B-) */ 
