@@ -70,21 +70,19 @@ body{
 /*posicion del texto con las redes sociales al lado*/
 .redesSocialesPie{
     color: whitesmoke;
-    margin:auto;
+    margin: auto;
     text-shadow: 0.5px 0.5px 0.5px black;
     z-index: 10;
 }
 
 .boxRedes1{
-    display: flex;
     justify-content: center;
-    margin: auto;   
+	align-content:center;
+	width:80%;
 }
 
 .boxSigue{ 
     text-align: center;
-    margin: auto; 
-    
 }
 
 /*esto es para los iconos de las redes sociales, 1 para los mas grandes, 2 para los que estan en pie de pagina*/
@@ -104,6 +102,7 @@ body{
 }
 
 .tituloIndex{
+	align-items:center;
     padding-top: 80px;
     margin: auto;
     width: 60%;
@@ -120,10 +119,9 @@ body{
 }
 
 .gaming{
-    font-size: 150%;
-    line-height: 150px;
+    font-size: 65px;
+    line-height: 100px;
     text-shadow: 2px 2px 10px black;
-    letter-spacing: 1px;
 }
 
 .capa{
@@ -445,12 +443,7 @@ body{
 
 /*el boton*/
 .buscarBoton{
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    display: grid;
-    transform: translate(10px,170px);
+    transform: translate(0px,170px);
     text-shadow: 0.5px 0.5px 0.5px black;
 }
 
@@ -462,7 +455,7 @@ body{
     font-weight: bold;
     color: antiquewhite;
     text-shadow: 0.5px 0.5px 0.5px black;
-    transform: translate(-20px,0px);
+    transform: translate(0px,0px);
 }
 
 /*formularios*/
@@ -511,7 +504,7 @@ body{
 /*aca un pequeño ajuste de posicion para el subtitulo arriba del boton en la pagina de soporte*/
 .noEncuentro{
     position: relative;
-    right: 30px;
+    right: 0px;
 }
 
 /*aguante la profe Gisele!! B-) */ 
