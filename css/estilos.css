@@ -10,6 +10,7 @@ body{
     background-color: rgb(209, 209, 209);
     margin: auto;
     display: grid;
+    
 }
 
 
@@ -38,7 +39,6 @@ nav{
     text-decoration:none;
     color: whitesmoke;
     text-shadow: 2px 2px 10px black;  
-    
     z-index: 3;
 	margin:0;
 	
@@ -48,7 +48,7 @@ nav{
 .pieDePagina{
     transform: translate(0px,150px);
     background-color: #272727;
-    padding: 75px;
+    padding-top: 20px;
 }
 
 /*fondo animado, titulo, redes sociales, etc; para el inicio*/
@@ -134,8 +134,9 @@ nav{
 }
 
 #hero{
-    min-height: 50vh;
+    min-height: 50%;
     position: relative;
+    padding: 0;
 }
 
 /*logo del encabezado para hacerle click y te manda al inicio de la pagina*/
@@ -171,7 +172,8 @@ nav{
     align-items: center;
     justify-items: center;
     gap: 2rem;
-    text-align: center;  
+    text-align: center; 
+    padding: 0; 
 }
 
 .noticias2{
@@ -183,7 +185,8 @@ nav{
     align-items: center;
     justify-items: center;
     gap: 3rem;
-    text-align: center;  
+    text-align: center; 
+    padding: 0;  
 }
 
 /*titulo de costado para presentar 3 noticias importantes*/
@@ -191,6 +194,7 @@ nav{
     margin: 100px 0px 0px 0px;
     text-align: center;
     text-shadow: 0.5px 0.5px 0.5px black;
+    padding: 0;
 }
 
 /*el "ver todo" del inicio*/
@@ -199,6 +203,7 @@ nav{
     text-align: center;
     color:rgb(0, 0, 107);
     text-shadow: 0.5px 0.5px 0.5px black;
+    padding: 0;
 }
 
 /*lo mejor para los subtitulos, jugando un poco mas con posicion relativa*/
@@ -229,6 +234,7 @@ nav{
     height: 200px;
     border-style: double;
     border-radius: 5px;
+    padding: 0;
 }
 
 .imgSoporte{
