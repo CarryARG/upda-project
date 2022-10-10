@@ -1,176 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias - UpdA</title>
-    <!--favicon-->
-    <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1CRJeGzwL9-jFyxbImid2R7EvMRQcr1nN">
-    <!--fuente modo god-->
-    <link rel="stylesheet" href="./estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <!--en el logo volves a inicio, en las etiquetas los enlaces a otras paginas-->
-            <section id="encabezado">
-                    <div class="box">
-                        <a href="./index.html">
-                            <img src="http://drive.google.com/uc?export=view&id=1JT0YLjmlFnsDHVQtJKRh4liNzjxZD8y7" alt="logoInicio" class="logoInicio">
-                        </a>
-                    </div>
-                    <div class="box">
-                        <a href="./juegos.html" class="encabezado"><p>JUEGOS</p></a>
-                    </div>
-                    <div class="box">
-                        <a href="./plataformas.html" class="encabezado"><p>PLATAFORMAS</p></a>
-                    </div>
-                    <div class="box">
-                        <a href="./tiendas.html" class="encabezado"><p>TIENDAS</p></a>
-                    </div>
-                    <div class="box">
-                        <a href="#" class="encabezado"><p>NOTICIAS</p></a>
-                    </div>
-                    <div class="box">
-                        <a href="./soporte.html" class="encabezado"><p>SOPORTE</p></a>
-                    </div>                     
-                </section>
-        </nav>
-    </header>
-    <main>
-        <!--fondo del inicio-->
-        <section id="hero">
-            <img src="http://drive.google.com/uc?export=view&id=1OPwINVDhPK8OH1f_Cn62aBu3zLfQ8dmf" class="imagenMain">
-            <div>
-                <!--barra de busqueda noticias-->
-                <search><input name="busquedaNoticia" type="text" placeholder="Ingrese el nombre de alguna Noticia..." minlength="0" maxlength="50" required autofocus autocomplete="off" class="barraBusqueda"></search>
-            </div>
-            <div class="capa">   
-            </div>  
-        </section>
-        <br>
-        <section class="tablaNoticias">
-            <div class="ultimasNoticias">
-                <!--titulo de Ultimas Noticias + redes sociales-->
-                <h1 class="tituloNoticias">Ultimas Noticias</h1>
-                <div class="miniRedes">
-                    <div>
-                        <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono2">
-                    </div>
-                    <div>
-                        <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono2">
-                    </div>
-                    <div>
-                        <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono2">
-                    </div>
-                    <div>
-                        <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono2">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Noticias - UpdA</title>
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!--favicon-->
+        <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1CRJeGzwL9-jFyxbImid2R7EvMRQcr1nN">
+        <!--fuente modo god-->
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body class="container-fluid p-0">
+    <!--encabezado-->
+        <header>
+            <nav class="container-fluid position-fixed navbar navbar-expand-lg justify-content-around align-content-around" style="background-color: #012644">
+                <button class="navbar-toggler navbar-light container" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="encabezado" class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarScroll">                       
+                        <ul class="navbar-nav me-auto mb-0 m-2 container justify-content-around navbar-nav-scroll" style="--bs-scroll-height: 230px;">
+                            <li class="nav-item box">
+                                <a class="navbar-brand active" aria-current="page" href="../index.html"><img src="http://drive.google.com/uc?export=view&id=1JT0YLjmlFnsDHVQtJKRh4liNzjxZD8y7" alt="logoInicio" class="logoInicio"></a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav-link" aria-current="page" href="./juegos.html">JUEGOS</a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav-link" aria-current="page" href="./plataformas.html">PLATAFORMAS</a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav-link" aria-current="page" href="./tiendas.html">TIENDAS</a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav-link" aria-current="page" href="#">NOTICIAS</a>
+                            </li>
+                            <li class="nav-item box">
+                                <a class="nav-link" aria-current="page" href="./soporte.html">SOPORTE</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="noticiasDestacadas1">
-                <img src="https://picsum.photos/200?random=20" alt="Imagen random 3" class="noticiasDestacadas2">
-                <p class="textoNoticias">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur minima, voluptatem consequatur assumenda nostrum suscipit repellat quis provident earum quibusdam laboriosam eos, sequi in nihil explicabo corporis, dolorum delectus unde.
-                </p>
-            </div>
-            <div class="noticiasDestacadas1">
-                <img src="https://picsum.photos/200?random=39" alt="Imagen random 3" class="noticiasDestacadas2">
-                <p class="textoNoticias">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore a laboriosam, aliquid qui, sit illo nostrum, enim illum voluptas amet possimus reprehenderit ut dignissimos labore voluptatibus quidem ullam id commodi.
-                </p>
-            </div>
-        </section>
-        <!--un poco de br no viene mal xd-->
-    </main>
-    <article>
-        <section class="boxTop10Busquedas">
-            <div class="top10Busquedas"><h3>NOTICIAS DESTACADAS</h3></div>
-        <div class="busquedas2">
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=1" alt="Imagen random 1" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=2" alt="Imagen random 2" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=3" alt="Imagen random 3" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=4" alt="Imagen random 4" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=5" alt="Imagen random 5" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-        </div>
-        <div class="busquedas2">
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=6" alt="Imagen random 6" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=7" alt="Imagen random 7" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=8" alt="Imagen random 8" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=9" alt="Imagen random 9" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>
-            <div class="noticias">
-                <img src="https://picsum.photos/200?random=10" alt="Imagen random 10" class="imgBusqueda">   
-                <p>Lorem ipsum dolor.</p>
-            </div>            
-        </div>
-    </article>
-    <br>
-    <br>
-    <!--final de la pagina, redes sociales y texto de relleno-->
-    <footer id="pieDePagina">
-        <div>
-            <section class="redesSocialesPie">
-                
-                <div class="boxRedes1">
-                    <div class="boxSigue">SIGUE NUESTRAS REDES SOCIALES  |</div>
-                    <div class="boxRedes2">
-                        <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono1">
+            </nav>
+        </header>
+        <!--fondo y barra de busqueda-->
+        <main class="capa2">
+            <section class="translate-middle-y-10 container-fluid d-flex flex-column align-content-center justify-content-center" id="hero">
+                <br>
+                <br>
+                <br>
+                <div>
+                    <search><input name="busquedaNoticia" type="text" placeholder="Ingrese el nombre de alguna Noticia..." minlength="0" maxlength="50" required autofocus autocomplete="off" class="barraBusqueda container d-flex flex-column flex-xl-row flex-lg-row"></search>
+                </div>
+                    <img src="http://drive.google.com/uc?export=view&id=1OPwINVDhPK8OH1f_Cn62aBu3zLfQ8dmf" class="imagenMain">
+                <div class="capa">   
+                </div> 
+                <br>
+                <br>
+                <br> 
+            </section>
+        </main>
+        <article>
+            <section class="flex-md-row flex-column d-flex">
+                <div class="ultimasNoticias d-flex flex-column justify-content-center align-content-center">
+                    <!--titulo de Ultimas Noticias + redes sociales-->
+                    <h1 class="tituloNoticias text-center">Ultimas Noticias</h1>
+                    <div class="container d-flex miniRedes flex-row justify-content-center align-content-center">
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-2 col-lg-2 ">
+                            <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono2">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-2 col-lg-2 ">
+                            <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono2">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-2 col-lg-2 ">
+                            <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono2">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-2 col-lg-2 ">
+                            <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono2">
+                        </div>
                     </div>
-                    <div class="boxRedes2">
-                        <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono1">
-                    </div>
-                    <div class="boxRedes2">
-                        <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono1">
-                    </div>
-                    <div class="boxRedes2">
-                        <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono1">
+                </div>
+                <br>
+                <br>
+                <div class="flex-column flex-md-row justify-content-center align-content-center">
+                    <div class="card-group justify-content-center align-content-center">
+                        <div class="card">
+                          <img src="https://picsum.photos/200?random=45" class="card-img-top" alt="noticia importante 1">
+                          <div class="card-body" style="background-color: rgb(143, 142, 142);">
+                            <h5 class="card-title">Card title 1</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="https://picsum.photos/200?random=39" class="card-img-top" alt="noticia importante 2">
+                          <div class="card-body " style="background-color: rgb(143, 142, 142);">
+                            <h5 class="card-title">Card title 2</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"></p>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <div class="creditos">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
-                    qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
-                    explicabo accusamus quae veritatis?
-                </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
-                    qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
-                    explicabo accusamus quae veritatis?
-                </p>
-                <br>
-                <p>Creative Commons 2022</p>
+            <div class="d-flex flex-column flex-md-row">
+                <section class="boxTop10Busquedas">
+                    <div class="top10Busquedas"><h3>NOTICIAS DESTACADAS</h3></div>
+                    <div class="busquedas">
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=1" alt="Imagen random 1" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=2" alt="Imagen random 2" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=3" alt="Imagen random 3" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=4" alt="Imagen random 4" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=5" alt="Imagen random 5" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=6" alt="Imagen random 6" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=7" alt="Imagen random 7" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=8" alt="Imagen random 8" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=9" alt="Imagen random 9" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                        <div class="noticias">
+                            <img src="https://picsum.photos/200?random=10" alt="Imagen random 10" class="imgBusqueda">   
+                            <p>Lorem ipsum dolor.</p>
+                        </div>         
+                    </div>
+                </section>
             </div>
-        </div>
-    </footer>
-</body>
+            <br>
+            <br>
+            <br>
+            <br>
+        </article>
+        <!--final de la pagina, redes sociales y texto de relleno-->
+        <footer class="container-fluid pieDePagina">
+            <div class="container flex-row">
+                <div class="container redesSocialesPie d-flex flex-row boxRedes1">
+                    <div class="col-4 col-sm-4 col-md-5 col-xxl-6 col-lg-6 boxSigue">SIGUE NUESTRAS REDES SOCIALES</div>
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-1 col-lg-1 ">
+                            <img src="http://drive.google.com/uc?export=view&id=1AoXYiqriBL9oShylhgxDR_wVBcHuVXab" alt="facebook" class="icono2">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-1 col-lg-1 ">
+                            <img src="http://drive.google.com/uc?export=view&id=1MPuizOVGmLH67qrwDJFctY8JMeVcLYMU" alt="instagram" class="icono2">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-1 col-lg-1 ">
+                            <img src="http://drive.google.com/uc?export=view&id=13dsAogMz8UNTf9FYe6igXohHTqe31g6p" alt="twitter" class="icono2">
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-1 col-xxl-1 col-lg-1 ">
+                            <img src="http://drive.google.com/uc?export=view&id=1mDG1haBrLxhIZQavfggqIx8Gz5qd_pmp" alt="reddit" class="icono2">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="creditos">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
+                        qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
+                        explicabo accusamus quae veritatis?
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad amet illo consectetur 
+                        qui tempore inventore, magnam explicabo, sunt veniam facere. Saepe aliquid nulla in optio 
+                        explicabo accusamus quae veritatis?
+                    </p>
+                    <br>
+                    <p>Creative Commons 2022</p>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
