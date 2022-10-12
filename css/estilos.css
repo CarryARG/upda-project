@@ -1,16 +1,18 @@
 @charset "UTF-8";
-/*aca veran como jugue de manera imperial con las posiciones ralativas, los margenes, etc;
-no hice que todos se posicionen igual para que tuviera como mas diseño propio con sus propios detalles*/
-/*
-/*fuente para todo el body, margen en automatico y un fondo de color blanco no tan blanco xd*/
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #d1d1d1;
-  margin: auto;
-  display: grid; }
+.pieDePagina {
+  transform: translate(0px, 150px);
+  background-color: #272727;
+  padding-top: 20px; }
 
-.lateral {
-  justify-content: right; }
+.redesSocialesPie {
+  color: whitesmoke;
+  margin: auto;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  z-index: 10; }
+
+.creditos {
+  color: whitesmoke;
+  text-align: center; }
 
 .box {
   width: 200px;
@@ -32,13 +34,16 @@ nav {
   z-index: 3;
   margin: 0; }
 
-/*glorioso pie de pagina*/
-.pieDePagina {
-  transform: translate(0px, 150px);
-  background-color: #272727;
-  padding-top: 20px; }
+.logoInicio {
+  width: 60px;
+  height: 60px; }
 
-/*fondo animado, titulo, redes sociales, etc; para el inicio*/
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #d1d1d1;
+  margin: auto;
+  display: grid; }
+
 .redesSociales1 {
   background: #012644;
   color: whitesmoke;
@@ -48,13 +53,6 @@ nav {
   transform: translate(0px, 64px);
   padding: 16px;
   border-style: double; }
-
-/*posicion del texto con las redes sociales al lado*/
-.redesSocialesPie {
-  color: whitesmoke;
-  margin: auto;
-  text-shadow: 0.5px 0.5px 0.5px black;
-  z-index: 10; }
 
 .boxRedes1 {
   justify-content: center;
@@ -122,10 +120,57 @@ nav {
   height: 120%;
   transform: translate(0px, 40px); }
 
-/*logo del encabezado para hacerle click y te manda al inicio de la pagina*/
-.logoInicio {
-  width: 60px;
-  height: 60px; }
+.imgBusqueda {
+  width: 250px;
+  height: 200px;
+  border-style: double;
+  border-color: #272727;
+  border-radius: 5px; }
+
+.barraBusqueda {
+  padding-top: 10px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transform: translate(0px, 40px); }
+
+.carrusel {
+  padding-top: 64px;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  border-radius: 5px;
+  transform: translate(0px, 64px);
+  align-items: center;
+  justify-items: center; }
+
+.imagenMain {
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  object-fit: cover; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .textoIcono {
+    width: 100%; }
+  div.buscarBoton {
+    position: relative;
+    margin-top: 200px; } }
+
+@media (min-width: 320px) {
+  .noticiasDestacadas {
+    font-size: 30px; } }
 
 .boxNoticias {
   display: grid;
@@ -135,6 +180,12 @@ nav {
   justify-content: center;
   align-items: center; }
 
+.lateral {
+  justify-content: right; }
+
+/*fondo animado, titulo, redes sociales, etc; para el inicio*/
+/*posicion del texto con las redes sociales al lado*/
+/*logo del encabezado para hacerle click y te manda al inicio de la pagina*/
 .noticias3 {
   display: flex;
   margin: 0 auto;
@@ -215,53 +266,8 @@ nav {
 .textoIcono {
   width: 50%; }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .textoIcono {
-    width: 100%; }
-  div.buscarBoton {
-    position: relative;
-    margin-top: 200px; } }
-
 .imgSoporte:hover {
   transform: rotateY(180deg); }
-
-.imgBusqueda {
-  width: 250px;
-  height: 200px;
-  border-style: double;
-  border-color: #272727;
-  border-radius: 5px; }
-
-/*full lorem texto de relleno*/
-.creditos {
-  color: whitesmoke;
-  text-align: center; }
-
-/*la famosa barra de busqueda, o lo que intente hacer xd*/
-.barraBusqueda {
-  padding-top: 10px;
-  margin: auto;
-  width: 100%;
-  position: relative;
-  z-index: 2;
-  font-style: italic;
-  font-size: 20px;
-  letter-spacing: 1px;
-  border-radius: 5px;
-  transform: translate(0px, 40px); }
-
-.carrusel {
-  padding-top: 64px;
-  margin: auto;
-  width: 90%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  font-size: 20px;
-  border-radius: 5px;
-  transform: translate(0px, 64px);
-  align-items: center;
-  justify-items: center; }
 
 .navegarPorLetra {
   color: black;
@@ -291,17 +297,6 @@ nav {
   letter-spacing: 10px;
   padding: 0; }
 
-/*para el resto de paginas sin fondo animado como el del inicio*/
-.imagenMain {
-  position: absolute;
-  width: 100%;
-  height: 140%;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  object-fit: cover; }
-
-/*juego de textos e imagenes en la pagina plataformas*/
 .texto1 {
   display: flex;
   width: 100%;
@@ -442,8 +437,3 @@ nav {
 .noEncuentro {
   position: relative;
   right: 0px; }
-
-/*aguante la profe Gisele!! B-) */
-@media (min-width: 320px) {
-  .noticiasDestacadas {
-    font-size: 30px; } }
